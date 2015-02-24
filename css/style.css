@@ -1,3 +1,69 @@
-@charset "utf-8";
-/* CSS Document */
+body {}
 
+.main-content-wrapper, header > .row {
+	max-width:1200px;
+	margin:0 auto;}
+
+/*--------- header --------*/
+
+header {
+	background-color:#49154a;
+	height:88px;}
+	
+.logo {
+	margin-top:25px;}	
+	
+/*-------- end header ------*/
+
+/*---- main section ---------*/
+.item-top {
+	height:225px;
+	background-position:center center;
+	background-size:cover;	
+	position:relative;}
+	
+.item-content {
+	height:100%;
+	position:relative;}
+	
+.item-menu {
+	position:absolute;
+	bottom:0;
+	right:0;}
+	
+.item-menu {
+	list-style:none;}
+		
+.item-menu > li {
+	border-right:1px solid white;
+	float:left;}	
+	
+.item-menu > li:last-child {
+	border-right:none;}
+	
+.item-menu li > a {
+	display:block;
+	height:45px;
+	width:45px;
+	background-color:#1fb6db;}
+	
+.item-menu > li:last-child > a{
+	width:100px;
+	background-color:#e7307d;}
+	
+	
+	
+	
+			
+	
+	
+	
+	
+aside {
+	height:300px;}
+	
+aside.a-left {
+	background-color:#549D32;}
+	
+aside.a-right {
+	background-color:#5C4915;}			
