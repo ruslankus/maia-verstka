@@ -1,4 +1,14 @@
-body {}
+* {
+margin:0;
+padding:0;}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;}
+	
+h1, h2, h3, h4, h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;}
 
 .main-content-wrapper, header > .row {
 	max-width:1200px;
@@ -16,11 +26,73 @@ header {
 /*-------- end header ------*/
 
 /*---- main section ---------*/
+
+
+
+.top-btns-holder > a {
+	padding-left:12px;
+	padding-right:12px;
+	margin-top:15px;
+	margin-bottom:15px;
+	display:block;
+	height:40px;
+	line-height:40px;
+	color:white;
+	font-size:1.188em;
+	font-weight:600;
+	background-color:#1fb6db; }
+	
+.top-btns-holder > a > span {
+	display:block;
+	float:left;
+	height:40px;
+	line-height:40px;}
+	
+.top-btns-holder > a > span > img {
+	display:block;
+	margin-top:7px;}
+	
+.top-btns-holder > a > span:last-child{
+	margin-left:10px;}
+	
+
 .item-top {
 	height:225px;
 	background-position:center center;
 	background-size:cover;	
 	position:relative;}
+	
+/*--- item head - part 	---*/
+	
+.item-head {
+	background:url(../images/item_headr_bg.png) top repeat-x ;
+	height:55px;}
+	
+.item-head > h2 {
+	color:white;
+	font-size:1.750em;
+	line-height:55px;
+	margin:0;}
+	
+.item-head > .price {
+	padding-left:10px;
+	padding-right:10px;
+	height:100%;
+	background-color:#72287d;
+	color:white;
+	font-size:1.188em;
+	font-weight:600;}
+	
+.item-head > .price > span:first-child {
+	margin-top:10px;
+	line-height:0.750em;
+	font-size:0.750em;}
+	
+.item-head > .price > span {
+	text-transform:uppercase;
+	display:block;}
+	
+/*---- item content  part----*/	
 	
 .item-content {
 	height:100%;

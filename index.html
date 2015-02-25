@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <title>Maya page</title>
 </head>
@@ -19,6 +20,15 @@
 
 <div class="container-fluid">
 	<div class="row main-content-wrapper">
+        <div class="botton-holder clearfix col-xs-12">
+            <div class="pull-left top-btns-holder">
+                <a class=" visible-xs" href="#"><span>Filters</span><span><img src="images/settings.png" width="26" height="26" /></span></a>
+            </div>
+            <div class="pull-right top-btns-holder">
+                <a class="visible-xs visible-sm" href="#"><span>Favorites</span><span><img src="images/faforite.png" width="27" height="27" /></span></a>
+            </div>
+        </div><!--/botton-holder -->	
+    
     	<aside class="col-md-3 col-sm-3 hidden-xs a-left">
         left
         </aside>
@@ -28,8 +38,11 @@
                     <div class="item-content">
                         <div class="item-head clearfix">
                             <h2 class="pull-left">Saloom name</h2>
-                            <div class="pull-right">price</div>
-                            <div class="pull-right">rating</div>
+                            <div class="price pull-right">
+                            	<span>From</span>
+                                <span>10&nbsp;&euro;</span>
+                            </div><!--/price -->
+                            <div class="rating pull-right">rating</div>
                         </div><!--/item-head -->
                         
                         <ul class="item-menu clearfix">
