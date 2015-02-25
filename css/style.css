@@ -65,16 +65,33 @@ header {
 	position:relative;}
 	
 /*--- item head - part 	---*/
+
+
 	
 .item-head {
 	background:url(../images/item_headr_bg.png) top repeat-x ;
 	height:55px;}
 	
+.header-blur {
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);}
+		
+	
 .item-head > h2 {
+	width:190px;
 	color:white;
-	font-size:1.750em;
+	font-size:1em;
+	font-weight:600;
+	text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.3);
 	line-height:55px;
-	margin:0;}
+	margin-left:10px;
+	margin-top:0;
+	overflow: hidden;
+	white-space: nowrap; /* Don't forget this one */
+	text-overflow: ellipsis; }
 	
 .item-head > .price {
 	padding-left:10px;
@@ -94,6 +111,27 @@ header {
 	text-transform:uppercase;
 	display:block;}
 	
+.rating-holder {
+	margin-top:7px;
+	margin-right:10px;
+	color:white;
+	font-weight:600;
+	font-size:0.938em;}
+	
+.rating-holder > span {
+	height:20px;
+	width:20px;
+	text-align:center;
+	display:block;}	
+	
+.rating.rating-0 {
+	background:url(../images/sprite_rating_head.png) left top no-repeat;}
+	
+.rating.rating-1, .rating.rating-2,
+.rating.rating-3, .rating.rating-4,
+.rating.rating-5 {
+	background:url(../images/sprite_rating_head.png) left bottom no-repeat;}
+	
 /*---- item content  part----*/	
 	
 .item-content {
@@ -103,9 +141,8 @@ header {
 .item-menu {
 	position:absolute;
 	bottom:0;
-	right:0;}
-	
-.item-menu {
+	right:0;
+	margin:0;
 	list-style:none;}
 		
 .item-menu > li {
@@ -116,15 +153,44 @@ header {
 	border-right:none;}
 	
 .item-menu li > a {
+	text-align:center;
 	display:block;
 	height:45px;
 	width:45px;
+	line-height:45px;
 	background-color:#1fb6db;}
+	
+.item-menu li > a:hover  {
+	background-color:#aaaaaa;}
+	
+	
+.item-menu li.book > a > span {
+	display:block;
+	float:left;
+	font-size:1.188em;
+	font-weight:600;
+	color:white;
+	text-decoration:none;}
+	
+.item-menu li.book > a > span:first-child {
+	margin-left:10px;}
 	
 .item-menu > li:last-child > a{
 	width:100px;
 	background-color:#e7307d;}
 	
+.fav-item-btn {
+	position:absolute;
+	bottom:0;
+	left:0;
+	display:block;
+	height:45px;
+	width:45px;
+	background:url(../images/fav-like-bg.png) center top no-repeat;}
+	
+a.fav-item-btn:hover {
+	background-position:center bottom;}
+		
 	
 	
 	
