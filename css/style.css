@@ -2,6 +2,9 @@
 margin:0;
 padding:0;}
 
+a {
+	outline:none;}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;}
@@ -160,8 +163,26 @@ header {
 	line-height:45px;
 	background-color:#1fb6db;}
 	
+.item-menu li > a:focus {
+	outline:none;}
+	
+	
+.item-menu > li.info > a {
+	background:#1fb6db url(../images/info-btn-bg.png) center top no-repeat;}
+	
+.item-menu > li.map > a {
+	background:#1fb6db url(../images/map-btn-bg.png) center top no-repeat;}
+	
+.item-menu > li.cart > a {
+	background:#1fb6db url(../images/shop-btn-bg.png) center top no-repeat;}
+	
+	
 .item-menu li > a:hover  {
 	background-color:#aaaaaa;}
+	
+.item-menu li > a.active {
+	background-color:white;
+	background-position:center bottom;}
 	
 	
 .item-menu li.book > a > span {
@@ -175,9 +196,21 @@ header {
 .item-menu li.book > a > span:first-child {
 	margin-left:10px;}
 	
+.item-menu li.book > a > span.arrow {
+	width:45px;
+	height:45px;
+	background:url(../images/book-arrow-btn-bg.png) center top no-repeat;}
+	
+.item-menu li.book > a.active > span.arrow {
+	background-position:center bottom;}
+	
 .item-menu > li:last-child > a{
 	width:100px;
 	background-color:#e7307d;}
+	
+.item-menu > li:last-child > a.active{
+	background-color:#aaa;}
+	
 	
 .fav-item-btn {
 	position:absolute;
@@ -191,9 +224,84 @@ header {
 a.fav-item-btn:hover {
 	background-position:center bottom;}
 		
+/*------ item tabs- part ------*/
+.info-block > ul.nav {
+	margin-top:20px;
+	padding-bottom:20px;
+	border-color:#ddd;}
+
+.info-block > ul.nav > li {
+	margin:0;
+	position:static;}
+
+.info-block > ul.nav > li > a {
+	padding:10px 15px;
+	border:none;
+	border-radius:0;
+	margin:0;
+	line-height:18px;
+	color:#AAAAAA;
+	display:block;}
+	
+.info-block > ul.nav > li > a:hover {
+	border:none;
+	color:white;
+	background-color:#c4c4c4;}
+	
+.info-block > ul.nav > li > a:focus {
+	outline:none;
+	border:none;}
+
+.info-block > ul.nav > li > a > span {
+	height:18px;
+	display:block;
+	float:left;}
+	
+.info-block > ul.nav > li > a > span:first-child {
+	margin-right:5px;
+	color:#80d8eb;
+	font-size:16px;
+	width:20px;}
+	
+.info-block > ul.nav > li.active > a > span:first-child {
+	background-position:center top;
+	color:white;}
+	
+.info-block > ul.nav > li > a:hover > span:first-child {
+	background-position:center top;
+	color:white;}
+	
+.info-block > ul.nav > li.active > a {
+	color:white;
+	background-color:#1fb6db;}
+	
+.info-block > ul.nav > li.active > a:hover > span:first-child {
+	background-position:center top;
+	color:white;}
+	
+.info-block .photos {
+	background:url(../images/picure-bg.png) center bottom no-repeat;}	
+
+.info-block .info {
+	background:url(../images/info-bg.png) center bottom no-repeat;}
+
+.info-block .review {
+	background:url(../images/review-bg.png) center bottom no-repeat ;}
 	
 	
+.info-block {
+	min-height:200px;
+	position:relative;
+	padding-bottom:50px;}		
 	
+.info-block .close-page {
+	display:block;
+	width:45px;
+	height:45px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:#aaa url( ../images/arrow-up-btn-bg.png) center center no-repeat;}	
 			
 	
 	
