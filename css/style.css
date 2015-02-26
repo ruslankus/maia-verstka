@@ -292,16 +292,38 @@ a.fav-item-btn:hover {
 .info-block {
 	min-height:200px;
 	position:relative;
-	padding-bottom:50px;}		
+	padding-bottom:50px;}
 	
-.info-block .close-page {
-	display:block;
-	width:45px;
-	height:45px;
+.info-block .buttom-links {
 	position:absolute;
 	bottom:0;
-	right:0;
-	background:#aaa url( ../images/arrow-up-btn-bg.png) center center no-repeat;}	
+	width:100%;}
+	
+.info-block .buttom-links > a {
+	display:block;
+	height:45px; }
+	
+.close-page {
+	width:45px;
+	height:45px;
+	background:#aaa url( ../images/arrow-up-btn-bg.png) center center no-repeat;}
+	
+.write-rewiew {
+	padding-left:10px;
+	margin-right:10px;
+	color:white;
+	background-color: #e7307d;}
+	
+.write-rewiew:hover {
+	text-decoration:none;
+	color:white;
+	cursor:pointer;}
+	
+.write-rewiew > span {
+	font-weight:600;
+	font-size:1.188em;
+	height:100%;
+	line-height:45px;}
 			
 	
 	
