@@ -20,15 +20,32 @@ h1, h2, h3, h4, h5 {
 /*--------- header --------*/
 
 header {
+	z-index:99;
+	position:fixed;
+	top:0;
+	width:100%;
 	background-color:#49154a;
-	height:88px;}
+	height:114px;}
+	
+header > .row {
+	position:relative;}
+	
+.inputs-holder {
+	position:absolute;
+	bottom:0;}	
 	
 .logo {
-	margin-top:25px;}	
+	display:block;}
+
+.logo-holder > a > img {
+	max-width:100%;}
 	
 /*-------- end header ------*/
 
 /*---- main section ---------*/
+#main-wrapper {
+	padding-top:114px;}
+
 .main-content-wrapper > * {
 	padding-left:0;
 	padding-right:0;}
@@ -289,7 +306,7 @@ a.fav-item-btn:hover {
 	background:url(../images/review-bg.png) center bottom no-repeat ;}
 	
 	
-.info-block {
+.info-block .tab-content > div {
 	min-height:200px;
 	position:relative;
 	padding-bottom:50px;}

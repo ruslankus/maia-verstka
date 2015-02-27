@@ -12,13 +12,52 @@
 <body>
 <header class="container-fluid">
 	<div class="row">
-    	<div class="col-xs-12">
-        	<a class="pull-left logo" href="/"><img src="images/logo.png" width="123" height="39" alt="logo" /></a>
-        </div>
+        	<div class="logo-holder col-xs-4">
+                <a class="logo" href="/"><img src="images/logo.png" alt="logo" /></a>
+            </div><!--/logo-holder -->
+                        
+            <div class="inputs-holder clearfix col-xs-12">
+            	<div class="search-input-holder">
+                	<input type="text" />
+            	</div><!--/holder -->
+                
+                <div class="time-input-holder">
+                	<input type="text" />
+                </div><!--/time-input-holder -->
+                
+                <div class="service-input-holder">
+                	<input type="text" />
+                </div>
+            </div><!--/inputs-holder -->
+            
+            <div class="icons-holder col-xs-8">
+            	<div>
+					<a href="#">lng</a>                
+                </div>
+            	<div>
+					<a href="#">cart</a>                
+                </div>
+            	<div>
+					<a href="#">help</a>                
+                </div>
+            	<div>
+					<a href="#">favorite</a>                
+                </div>
+            	<div>
+					<a href="#">sheld</a>                
+                </div>
+                
+                <div>
+                	<a href="#">login</a>
+                </div>
+            </div><!--/holder - holder --->
+            
+        	
+        
     </div>
 </header>
 
-<div class="container-fluid">
+<div class="container-fluid" id="main-wrapper">
 	<div class="row main-content-wrapper">
         <div class="botton-holder clearfix col-xs-12">
             <div class="pull-left top-btns-holder">
@@ -98,17 +137,46 @@
                         
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="home">Photos</div>
-                            <div role="tabpanel" class="tab-pane" id="profile">Details</div>
-                            <div role="tabpanel" class="tab-pane" id="messages">Services</div>
-                            <div role="tabpanel" class="tab-pane" id="settings">.. Specialist ..</div>
-                            <div role="tabpanel" class="tab-pane" id="reviews">.. Reviews ..</div>
-                        </div>
+                          
+                            <div role="tabpanel" class="tab-pane active" id="photos">
+                            
+                                Photos
+                                <div class="buttom-links clearfix">
+                                    <a class="close-page pull-right"></a>
+                                </div><!--/boottom-links -->
+                            </div><!--/photos -->
+                            
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                            	Details
+                                <div class="buttom-links clearfix">
+                                    <a class="close-page pull-right"></a>
+                                </div><!--/boottom-links -->
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                                Services
+                                <div class="buttom-links clearfix">
+                                    <a class="close-page pull-right"></a>
+                                </div><!--/boottom-links -->
+                            </div><!--/messages -->
+                            
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                            
+                            .. Specialist ..
+                                <div class="buttom-links clearfix">
+                                    <a class="close-page pull-right"></a>
+                                </div><!--/boottom-links -->
+                            </div><!--/settings -->
+                            
+                            <div role="tabpanel" class="tab-pane" id="reviews">
+                                .. Reviews ..
+                                <div class="buttom-links clearfix">
+                                    <a class="close-page pull-right"></a>
+                                    <a class="write-rewiew pull-right"><span>Write rewiev</span><span><img src="images/rewie-btn-bg.png" width="45" height="45"></span></a>
+                                </div><!--/boottom-links -->
+                            </div><!--/reviews -->
+                        </div><!--/tab-content -->
                         
-                        <div class="buttom-links clearfix">
-                        	<a class="close-page pull-right"></a>
-                            <a class="write-rewiew pull-right"><span>Write rewiev</span><span><img src="images/rewie-btn-bg.png" width="45" height="45"></span></a>
-                        </div><!--/
                     </div><!--/info-block -->
                 </div><!--/item-item bottom -->
             </div><!--/item-wrapper -->
