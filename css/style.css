@@ -28,11 +28,16 @@ header {
 	height:114px;}
 	
 header > .row {
+	height:100%;
 	position:relative;}
+	
+header > .row > div {
+	padding-left:0;
+	padding-right:0;}
 	
 .inputs-holder {
 	position:absolute;
-	bottom:0;}	
+	bottom:30px;}	
 	
 .logo {
 	display:block;}
@@ -40,6 +45,70 @@ header > .row {
 .logo-holder > a > img {
 	max-width:100%;}
 	
+.icons-holder {
+	display:table;
+	float:right;}	
+	
+.icons-holder > div {
+	display:table-cell;}	
+	
+.icons-holder > div > a{
+	float:right;
+	position:relative;
+	display:block;
+	height:26px;
+	width:26px;}
+	
+.icons-holder > div > a > .badge {
+	font-size:0.563em;
+	background-color:#e7307d;
+	position:absolute;
+	bottom:-3px;
+	right:-5px;}
+	
+.icons-holder > div > a:hover{
+	background-position:center bottom;}
+	
+	
+.hd-lng {
+	background:url(../images/russian_lng.png) center center no-repeat;}
+	
+.hd-cart {
+	background:url(../images/head-cart-btn-bg.png) center top no-repeat;}
+	
+.hd-help {
+	background:url(../images/head-help-btn-bg.png) center top no-repeat;}
+	
+.hd-tast {
+	background:url(../images/task-btn-holder.png) center top no-repeat;}
+	
+.hd-fav {
+	background:url(../images/head-fav-btn-bg.png) center top no-repeat;}	
+	
+.hd-sheld{
+	background:url(../images/head-sheald-btn-bg.png) center top no-repeat;}
+	
+.hd-login{
+	background:url(../images/head-login-btn-bg.png) center top no-repeat;}
+	
+.inputs-holder > div {
+	top:0;
+	position:absolute;}
+	
+.inputs-holder > div > input {
+	background-color:transparent;}
+	
+.search-input-holder {
+	background-color:#79CFA5;}
+	
+.time-input-holder {
+	left:30px;
+	background-color:#70A4C5;}
+	
+.search-input-holder {
+	left:50px;
+	background-color:#E0B5B6;}		
+								
 /*-------- end header ------*/
 
 /*---- main section ---------*/
@@ -361,3 +430,11 @@ aside.a-right {
 	.item-head > h2 {font-size:1.375em; width:68%;}
 	
 } /*-- 471 end --*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px){
+	header {height:88px;}
+	#main-wrapper { padding-top:88px;}
+	.inputs-holder {position:relative; bottom:0;}
+	
+} /*-- 768 end -- */ 
