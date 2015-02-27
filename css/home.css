@@ -1,0 +1,69 @@
+* {
+margin:0;
+padding:0;}
+
+a {
+	outline:none;}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;}
+	
+h1, h2, h3, h4, h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;}
+
+
+	
+/*----- top - content  -----*/
+.top {
+	background:url(../images/home-top_bg.jpg) center center no-repeat;
+	background-size:cover;}
+	
+.top > .row {
+	max-width:1200px;
+	margin:0 auto;}
+	
+.top-content-wrapper {
+	height:480px;}
+	
+.form-holder {
+	padding:15px;
+	margin-top:100px;
+	border:1px solid #dbcbbc;
+	background:url(../images/home-form-bg.png); }
+	
+.form-holder > h3 {
+	text-align:center;
+	font-weight:300;
+	text-transform:uppercase;
+	color:white;
+	font-size:1.438em;}
+	
+.form-holder > p {
+	text-align:center;
+	color:white;
+	font-size:0.938em;}
+	
+.form-holder > form > * {
+	float:left;
+	height:48px;}
+	
+.form-holder > form > input {
+	width:75%;}
+			
+.form-holder > form > button {
+	background-color:#00c5ea;
+	border:none;
+	border-radius:0;
+	width:25%;}
+	
+	
+/*---- bottom part ------*/
+.bot-content-wrapper > h2 {
+	font-weight:300;
+	font-size:2.5em;
+	color:#01b1d7;
+	text-align:center;}
+	
+	
