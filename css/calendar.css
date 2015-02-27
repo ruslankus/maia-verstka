@@ -1,0 +1,132 @@
+*
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: lightgrey;
+}
+
+.calendar
+{
+    width: 300px;
+    /*width: 100%;*/
+    height: 263px;
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    /*left: 10px;*/
+    /*top: 10px;*/
+}
+
+.calendar .switcher
+{
+    width: 100%;
+    height: 48px;
+    background-color: #72287d;
+    margin-bottom: 1px;
+}
+
+.calendar .switcher #back
+{
+    width: 30%;
+    height: 48px;
+    /*background-color: aquamarine;*/
+    float: left;
+
+    font-size: 12px;
+    color: white;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-image: url("../img/calndar/previous.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    cursor: pointer;
+}
+
+.calendar .switcher #current
+{
+    width: 40%;
+    height: 48px;
+    float: left;
+
+    font-size: 19px;
+    color: white;
+    line-height: 48px;
+    text-align: center;
+    cursor: default;
+
+}
+
+.calendar .switcher #next
+{
+    width: 30%;
+    height: 48px;
+    /*background-color: aqua;*/
+    float: left;
+
+    font-size: 12px;
+    color: white;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-image: url("../img/calndar/next.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    cursor: pointer;
+}
+
+.day
+{
+    width: 13.95%;
+    height: 42px;
+    /*background-color: #dddddd;*/
+    margin-right: 1px;
+    margin-bottom: 1px;
+    float: left;
+    color: #222222;
+    font-size: 15px;
+    text-align: center;
+    line-height: 42px;
+
+    cursor: pointer;
+}
+
+
+
+.calendar .day:nth-child(7n+1), .calendar .day:nth-child(7n)
+{
+    background-color: #ececec;
+}
+
+.calendar .day.empty
+{
+    background-color: #dddddd;
+}
+
+
+.calendar .day.today
+{
+    background-color: #00c5ea;
+}
+
+.calendar .day:hover
+{
+    background-color: #c4c4c4;
+}
+
+.calendar .day.selected
+{
+    background-color: #e7307d;
+}
+
