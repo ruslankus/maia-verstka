@@ -66,4 +66,77 @@ h1, h2, h3, h4, h5 {
 	color:#01b1d7;
 	text-align:center;}
 	
+.offers-up {
+	width:262px;
+	margin: 0 auto;}
+	
+.offers-item {
+	position:relative;}
+	
+.offers-item > .offers-price {
+	padding:10px 15px;
+	background-color:#72287d;
+	position:absolute;
+	top:0;
+	right:0;
+	color:white;}
+
+.offers-item > .offers-price > span {
+	text-align:center;
+	display:block;}
+	
+.offers-item > .offers-price > span:first-child {
+	font-size:12px;
+	text-transform:uppercase;}
+	
+.offers-item > .offers-price > span:last-child {
+	font-size:19px;}
+	
+.offers-item > .offers-description {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	padding:15px;
+	background-size:contain;
+	background:url(../images/offer-description-bg.png) repeat-x}
+	
+.offers-description > h4 {
+	margin:0;
+	text-align:center;
+	font-size:19px;
+	font-weight:600;
+	text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.4);
+	color:white;}
+	
+.offers-description > p {
+	text-align:center;
+	font-weight:300;
+	text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.4);
+	font-size:15px;
+	color:white;
+	margin-bottom:5px;}
+	
+.offers-rating {
+	height:20px;
+	background:url(../images/sprite_rating_head.png) center top no-repeat;}
+
+.offers-rating.rating-0 {
+	background-position: center 0px;}
+	
+.offers-rating.rating-1 {
+	background-position: center -18px;}
+	
+.offers-rating.rating-2 {
+	background-position: center -38px;}
+	
+.offers-rating.rating-3 {
+	background-position: center -58px;}
+		
+.offers-rating.rating-4 {
+	background-position: center -75px;}
+	
+.offers-rating.rating-5 {
+	background-position: center -95px;}
+			
+	
 	
