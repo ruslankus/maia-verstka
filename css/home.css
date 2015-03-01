@@ -62,13 +62,17 @@ h1, h2, h3, h4, h5 {
 .top-content-wrapper {
 	height:480px;}
 	
+.logo-holder > img {
+	width:182px;
+	height:58px;}	
+	
 .form-holder {
 	padding:15px;
 	margin-top:100px;
 	border:1px solid #dbcbbc;
 	background:url(../images/home-form-bg.png); }
 	
-.form-holder > h3 {
+.head-desc-holder > h3 {
 	text-align:center;
 	font-weight:300;
 	text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.4);
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5 {
 	color:white;
 	font-size:1.438em;}
 	
-.form-holder > p {
+.form-holder > p, .head-desc-holder > p {
 	text-align:center;
 	text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.4);
 	color:white;
@@ -147,6 +151,7 @@ h1, h2, h3, h4, h5 {
 	font-size:19px;}
 	
 .offers-item {
+	width:262px;
 	overflow:hidden;}	
 	
 .offers-item > .offers-description {
@@ -278,5 +283,25 @@ footer > div > div:last-child {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
+	.top-content-wrapper { height:600px;}
+	.form-holder { padding:20px; margin-top:160px;}
+	.logo-head-holder > .logo-holder, .head-desc-holder { float:left;}
+	.logo-holder > img {height:auto; width:150px;}
+	.head-desc-holder > h3, .head-desc-holder > p {text-align:left;margin:0}
+	.head-desc-holder > h3 { margin-top:10px; font-size:1.563em;}
+	.head-desc-holder {margin-left:10px;}
+	.logo-head-holder {margin-bottom:10px;}
+	.form-holder > form > input { width:80%;}
+	.form-holder > form > button { width:20%;}
 	.form-holder > form > button > span {width:50%; color:white}
+	.offers-up { width:544px;}
+	.offers-item {float:left;}
+	.offers-item:nth-child(odd) {margin-right:20px;}
+	
+	footer {padding:0}
+	footer > div.row {padding-left:0px; padding-right:0px; padding-top:15px; padding-bottom:0px;}
+	footer > div > .foot-menu-holder {float:right; width:250px; padding-top:10px;}
+	footer > div > .foot-logo-holder {float:left; width:auto;}
+	footer > div > .copy-holder {float:left; width:220px; padding-top:10px;}
+	footer > div > .copy-holder > p {text-align:left;} 
 } /*-- 768 end -- */ 
