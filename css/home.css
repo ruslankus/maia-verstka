@@ -17,12 +17,47 @@ h1, h2, h3, h4, h5 {
 	
 /*----- top - content  -----*/
 .top {
+	position:relative;
 	background:url(../images/home-top_bg.jpg) center center no-repeat;
 	background-size:cover;}
 	
 .top > .row {
 	max-width:1200px;
 	margin:0 auto;}
+	
+.lng-holder {
+	z-index:99;
+	border:1px solid #907862;
+	background:url(../images/lang-holder-bg.png);
+	position:absolute;
+	right:0;
+	top:0;}
+	
+.lng-holder > ul {
+	padding:0;
+	margin:0;
+	list-style:none;}
+	
+.lng-holder > ul > li {
+	display:block;
+	float:left;}
+	
+.lng-holder > ul > li > a{
+	font-size:1.188em;
+	text-align:center;
+	line-height:60px;
+	text-transform:uppercase;
+	color:white;
+	display:block;
+	height:60px;
+	width:60px;}
+	
+.lng-holder > ul > li > a.lng-active {
+	color:#01b1d7;}
+	
+.lng-holder > ul > li > a:hover{
+	cursor:pointer;
+	color:#01b1d7;}
 	
 .top-content-wrapper {
 	height:480px;}
@@ -36,12 +71,14 @@ h1, h2, h3, h4, h5 {
 .form-holder > h3 {
 	text-align:center;
 	font-weight:300;
+	text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.4);
 	text-transform:uppercase;
 	color:white;
 	font-size:1.438em;}
 	
 .form-holder > p {
 	text-align:center;
+	text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.4);
 	color:white;
 	font-size:0.938em;}
 	
@@ -50,6 +87,10 @@ h1, h2, h3, h4, h5 {
 	height:48px;}
 	
 .form-holder > form > input {
+	padding-left:40px;
+	border-radius:0;
+	border:none;
+	background:white url(../images/serch_input_bg.png) center left no-repeat;
 	width:75%;}
 			
 .form-holder > form > button {
@@ -57,6 +98,17 @@ h1, h2, h3, h4, h5 {
 	border:none;
 	border-radius:0;
 	width:25%;}
+	
+.form-holder > form > button > span {
+	width:100%;
+	display:block;
+	float:left;}
+	
+.form-holder > form > button > span:last-child {
+	text-align:center;}
+	
+.form-holder > form > button > span > img {
+	text-align:center;}
 	
 	
 /*---- bottom part ------*/
@@ -71,6 +123,7 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;}
 	
 .offers-item {
+	margin-bottom:20px;
 	position:relative;}
 	
 .offers-item > .offers-price {
@@ -79,6 +132,7 @@ h1, h2, h3, h4, h5 {
 	position:absolute;
 	top:0;
 	right:0;
+	z-index:99;
 	color:white;}
 
 .offers-item > .offers-price > span {
@@ -92,13 +146,33 @@ h1, h2, h3, h4, h5 {
 .offers-item > .offers-price > span:last-child {
 	font-size:19px;}
 	
+.offers-item {
+	overflow:hidden;}	
+	
 .offers-item > .offers-description {
+	display:block;
 	width:100%;
+	height:100%;
 	position:absolute;
-	bottom:0;
+	top:213px;
 	padding:15px;
 	background-size:contain;
 	background:url(../images/offer-description-bg.png) repeat-x}
+	
+.offers-item > .offers-description:hover {
+	padding-top:70px;
+	background:url(../images/offer-description-hover-bg.png);
+	top:0;}
+	
+.offers-item > .offers-description:active {
+	padding-top:70px;
+	background:url(../images/offer-description-hover-bg.png);
+	top:0;}
+	
+.offers-item > .offers-description:focus {
+	padding-top:70px;
+	background:url(../images/offer-description-hover-bg.png);
+	top:0;}
 	
 .offers-description > h4 {
 	margin:0;
@@ -115,6 +189,24 @@ h1, h2, h3, h4, h5 {
 	font-size:15px;
 	color:white;
 	margin-bottom:5px;}
+	
+.offers-description > p.full-desc {
+	line-height:15px;
+	font-size:13px;}
+	
+.offers-description > a {
+	padding-left:15px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	display:block;
+	background-color:#1fb6db;
+	font-size:1.188em;
+	color:white;
+	font-weight:600;}
+	
+.offers-description > a:hover {
+	text-decoration:none;}
 	
 .offers-rating {
 	height:20px;
@@ -137,6 +229,54 @@ h1, h2, h3, h4, h5 {
 	
 .offers-rating.rating-5 {
 	background-position: center -95px;}
+	
+/*---------- footer ---------*/
+footer {
+	background-color:#f9f9f9;}
+	
+footer > div {
+	padding:40px 25px;}
+	
+footer > div > div {
+	margin-bottom:30px;}
+	
+footer > div > div:last-child {
+	margin-bottom:0;}
+	
+.foot-menu-holder > ul {
+	width:100%;
+	list-style:none;
+	display:table;}
+	
+.foot-menu-holder > ul > li {
+	display:table-cell;
+	text-align:center}
+	
+.foot-menu-holder > ul > li > a {
+	color:#01b1d7;
+	font-weight:300;
+	font-size:0.938em;}
+	
+.foot-menu-holder > ul > li > a:hover {
+	text-decoration:none;}
+	
+.foot-logo-holder {
+	text-align:center;}	
+	
+.copy-holder > p {
+	margin:0;
+	font-size:0.813em;
+	font-weight:300;
+	color:#aaa;
+	text-align:center;}	
 			
 	
+/*--------------  media queries -------------------------*/
+@media (min-width: 471px) {
 	
+} /*-- 471 end --*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px){
+	.form-holder > form > button > span {width:50%; color:white}
+} /*-- 768 end -- */ 
