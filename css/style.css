@@ -425,6 +425,48 @@ aside.a-right {
 	background-color:#5C4915;}
 	
 	
+	
+/*---------- footer ---------*/
+footer {
+	background-color:#f9f9f9;}
+	
+footer > div {
+	padding:40px 25px;}
+	
+footer > div > div {
+	margin-bottom:30px;}
+	
+footer > div > div:last-child {
+	margin-bottom:0;}
+	
+.foot-menu-holder > ul {
+	width:100%;
+	list-style:none;
+	display:table;}
+	
+.foot-menu-holder > ul > li {
+	display:table-cell;
+	text-align:center}
+	
+.foot-menu-holder > ul > li > a {
+	color:#01b1d7;
+	font-weight:300;
+	font-size:0.938em;}
+	
+.foot-menu-holder > ul > li > a:hover {
+	text-decoration:none;}
+	
+.foot-logo-holder {
+	text-align:center;}	
+	
+.copy-holder > p {
+	margin:0;
+	font-size:0.813em;
+	font-weight:300;
+	color:#aaa;
+	text-align:center;}	
+	
+	
 /*--------------  media queries -------------------------*/
 @media (min-width: 471px) {
 	.item-head > h2 {font-size:1.375em; width:68%;}
@@ -436,5 +478,13 @@ aside.a-right {
 	header {height:88px;}
 	#main-wrapper { padding-top:88px;}
 	.inputs-holder {position:relative; bottom:0;}
+	
+	
+	footer {padding:0}
+	footer > div.row {padding-left:0px; padding-right:0px; padding-top:15px; padding-bottom:0px;}
+	footer > div > .foot-menu-holder {float:right; width:250px; padding-top:10px;}
+	footer > div > .foot-logo-holder {float:left; width:auto;}
+	footer > div > .copy-holder {float:left; width:220px; padding-top:10px;}
+	footer > div > .copy-holder > p {text-align:left;} 
 	
 } /*-- 768 end -- */ 
