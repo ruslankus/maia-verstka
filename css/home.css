@@ -313,12 +313,38 @@ footer > div > div:last-child {
 	.head-desc-holder > h3 { margin-top:20px; font-size:2.375em;}
 	.head-desc-holder > p, .form-holder > p {font-size:1.063em; margin-top:5px;}
 	
+	.bot-content-wrapper > h2 {margin-top:50px; margin-bottom:50px; font-size:3.438em;}
+	
 	.form-holder > form > input { width:83%;}
 	.form-holder > form > button { width:17%;}
 	
 	.offers-up, .offers-down { width:847px;}
 	.offers-item:nth-child(odd) {margin-right:0px;}
 	.offers-item {margin-left:20px;}
-	.offers-item:fisrt-child {margin-left:0px;}
+	.offers-item:first-child {margin-left:0px;}
 	.offers-item:last-child {display:none;}
 } /*--- 992 end --- */
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.top-content-wrapper { height:1200px;}
+	.form-holder {margin-left:auto; margin-right:auto; float:none; padding:65px; margin-top:270px;}
+	.form-holder > form > * { height:60px;}
+	.form-holder > form > button { width:170px;}
+	.form-holder > form > input { width:623px}
+
+	.form-holder > form > button > span {font-size:1.500em;}	
+	.form-holder > form > button > span:first-child{ width:60%; text-align:right;}
+	.form-holder > form > button > span:last-child{ width:40%;}
+	
+	.head-desc-holder {margin-left:25px;}
+	
+	.head-desc-holder > p, .form-holder > p {font-size:1.188em;}
+	
+	.offers-up, .offers-down { width:1150px;}
+	.offers-down { margin-bottom:100px;}
+	.offers-item {margin-left:30px; margin-bottom:30px;}
+	.offers-item:last-child {display:block;}
+} /*-- end 1200px --*/
