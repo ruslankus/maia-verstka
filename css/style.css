@@ -13,24 +13,26 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;}
 
-.main-content-wrapper/*, header > .row*/ {
+.main-content-wrapper, header > .row, footer > .row {
 	max-width:1200px;
 	margin:0 auto;}
 
 /*--------- header --------*/
 
-/*
 header {
 	z-index:99;
 	position:fixed;
 	top:0;
 	width:100%;
 	background-color:#49154a;
-	height:114px;}
+	height:128px;}
 	
 header > .row {
 	height:100%;
 	position:relative;}
+	
+.logo-holder {
+	margin-top:10px;}	
 	
 header > .row > div {
 	padding-left:0;
@@ -38,7 +40,7 @@ header > .row > div {
 	
 .inputs-holder {
 	position:absolute;
-	bottom:30px;}	
+	bottom:20px;}	
 	
 .logo {
 	display:block;}
@@ -47,6 +49,7 @@ header > .row > div {
 	max-width:100%;}
 	
 .icons-holder {
+	margin-top:15px;
 	display:table;
 	float:right;}	
 	
@@ -110,13 +113,12 @@ header > .row > div {
 	left:50px;
 	background-color:#E0B5B6;}		
 
-*/
 
 /*-------- end header ------*/
 
 /*---- main section ---------*/
 #main-wrapper {
-	padding-top:114px;}
+	padding-top:128px;}
 
 .main-content-wrapper > * {
 	padding-left:0;
@@ -416,13 +418,17 @@ a.fav-item-btn:hover {
 			
 	
 	
-	
+/*---- left an right asides ----*/	
 	
 aside {
-	height:300px;}
+	min-height:300px;}
 	
-aside.a-left {
-	background-color:#549D32;}
+aside.a-left {}
+
+aside.a-left > div {
+	margin-bottom:20px;
+	border-bottom:1px solid #ddd;}
+
 	
 aside.a-right {
 	background-color:#5C4915;}
@@ -473,14 +479,16 @@ footer > div > div:last-child {
 /*--------------  media queries -------------------------*/
 @media (min-width: 471px) {
 	.item-head > h2 {font-size:1.375em; width:68%;}
+	.icons-holder { margin-top:15px;}
 	
 } /*-- 471 end --*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
-	/*header {height:88px;}*/
+	header {height:88px;}
 	#main-wrapper { padding-top:88px;}
-	.inputs-holder {position:relative; bottom:0;}
+	.icons-holder { margin-top:20px;}
+	.inputs-holder {position:relative; bottom:0; margin-top:20px;}
 	
 	
 	footer {padding:0}
@@ -491,3 +499,8 @@ footer > div > div:last-child {
 	footer > div > .copy-holder > p {text-align:left;} 
 	
 } /*-- 768 end -- */ 
+
+
+@media (min-width:992px){
+	
+} /*-- 992px -- */

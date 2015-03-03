@@ -7,9 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style_h.css">
-
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/search_h.css">
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
@@ -21,7 +19,7 @@
 <header class="container-fluid header">
 
 
-	<div class="row">
+	<div class="row clearfix">
     
         <div class="logo-holder col-xs-4 col-sm-3 col-md-2">
             <a class="logo" href="/"><img src="images/logo.png" alt="logo" /></a>
@@ -98,7 +96,7 @@
     </div><!--/row -->
 </header>
 
-<div class="container-fluid" id="main-wrapper">
+<div class="container-fluid clearfix" id="main-wrapper">
 	<div class="row main-content-wrapper">
         <div class="botton-holder clearfix col-xs-12">
             <div class="pull-left top-btns-holder">
@@ -109,10 +107,58 @@
             </div>
         </div><!--/botton-holder -->	
     
-    	<aside class="col-md-3 col-sm-3 hidden-xs a-left">
-        left
-        </aside>
-        <section class="col-xs-12 col-md-7 col-sm-9">
+    	<aside class="col-md-3 col-sm-4 hidden-xs a-left">
+        	<div class="find-location">
+            	<h4>Find your look on a map</h4>
+                <div class="city-input-holder">
+                	<label>City</label>
+                    <input type="text" />
+                </div><!--/city-input-holder -->
+                <div class="aria-filters">
+                	<label>Area</label>
+                    <p><input type="checkbox"> Old Town</p>
+                    <p><input type="checkbox"> Old Town</p>
+                    <p><input type="checkbox"> Old Town</p>
+					<a href="#">Show more</a>
+                    <p>
+                    	Distance from <span>center</span> 
+                    	<select>
+                        	<option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                        </select>
+                        km
+                    </p>
+                </div>
+            </div><!--/find-location -->
+            
+            <div class="find-by-name">
+            	<h4>Enter name </h4>
+                <p>
+                <input type="text" placeholder="SPA, service or person" />
+                </p>
+            </div><!-- /find-by-name -->
+            
+            <div class="find-by-price">
+            	<h4>Price</h4>
+            </div><!--/find-by-price -->
+            
+            <div class="find-by-rating">
+            	 <h4>Rating</h4>
+            </div><!--/find-by-rating -->
+            
+            <div class="find-by-services">
+				<h4>Services</h4>            	
+            </div><!--/find-by-srvices -->
+            
+            <div class="find-by-speciality">
+            	<h4>Specialty</h4>
+            </div><!--/find-by-speciality -->
+        </aside><!--a-left -->
+        
+        
+        
+        <section class="col-xs-12 col-md-7 col-sm-8">
         
         	<div class="item-wrapper">
                    <div class="item-top" style="background-image:url(images/salon_bg.jpg)" >
