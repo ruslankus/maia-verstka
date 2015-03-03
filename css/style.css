@@ -13,12 +13,13 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;}
 
-.main-content-wrapper, header > .row {
+.main-content-wrapper/*, header > .row*/ {
 	max-width:1200px;
 	margin:0 auto;}
 
 /*--------- header --------*/
 
+/*
 header {
 	z-index:99;
 	position:fixed;
@@ -108,7 +109,9 @@ header > .row > div {
 .search-input-holder {
 	left:50px;
 	background-color:#E0B5B6;}		
-								
+
+*/
+
 /*-------- end header ------*/
 
 /*---- main section ---------*/
@@ -475,7 +478,7 @@ footer > div > div:last-child {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
-	header {height:88px;}
+	/*header {height:88px;}*/
 	#main-wrapper { padding-top:88px;}
 	.inputs-holder {position:relative; bottom:0;}
 	
