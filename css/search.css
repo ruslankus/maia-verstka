@@ -2,7 +2,6 @@
 {
     font-family: 'Open Sans', sans-serif;
     font-weight:400;
-    box-sizing: content-box;
 
     margin: 0;
     padding: 0;
@@ -16,6 +15,11 @@ body
 .clear
 {
     clear: both;
+}
+
+.header *
+{
+    box-sizing: content-box;
 }
 
 .header
@@ -357,14 +361,29 @@ body
 
     .header .aligner
     {
-        position: relative;
         min-height: 64px;
-        width: 1024px;
+        width: 100%;
+        /*width: 1024px;*/
+        padding-left: 10px;
         margin: 0 auto;
+    }
+    .header .aligner .icons-right
+    {
+        padding-right: 25px;
     }
 
     .header .icons-right li:nth-child(5){display: block;}
     .header .icons-right li:nth-child(6){display: block;}
+}
+
+@media (min-width: 1200px) {
+
+    .header .aligner
+    {
+        min-height: 64px;
+        width: 1200px;
+        padding-left: 0;
+    }
 }
 
 
