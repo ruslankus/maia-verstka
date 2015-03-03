@@ -249,19 +249,19 @@ function reCalcActiveWidth()
             jQuery(".in-search.elem").removeAttr('style');
             jQuery(".elem.h").removeAttr('style');
 
-            var active_w = line.width() - ((41 * 3) + 40);
+            var active_w = line.width() - ((41 * 3) + 40)-1;
             jQuery(".elem.active").css({width:active_w+"px"});
         }
         else
         {
-            var elem_all_w = ((line.width() / 4)-11);
+            var elem_all_w = ((line.width() / 4)-11)-1;
             jQuery(".in-search.elem").css({width:elem_all_w+1+"px"});
             jQuery(".elem.h").css({width:elem_all_w+"px"});
         }
     }
     else
     {
-        var search_w = line.width() - 40;
+        var search_w = line.width() - 40-1;
         jQuery(".elem.in-search").css({width:search_w+"px"});
     }
 }
