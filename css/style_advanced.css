@@ -1,0 +1,43 @@
+.map-box {
+	width: 100%;
+	height: 275px;
+	margin-top: 20px;
+}
+.item-wrapper{
+	margin-bottom:20px;
+}
+.hide-box{
+	height:40px;
+}
+
+/* Internal ajax menu tabs */
+
+.photo-block {
+	/*
+	background-color:#e1e1e1;
+	*/
+	margin:0px;
+	padding:0px 10px 20px 10px;
+	height: 250px;
+	/*
+	border:1px solid red;
+	*/
+}
+
+.photo-box {
+	/*
+	border:1px solid green;
+	*/
+}
+
+
+
+
+.photo-block > img {
+	display: block;
+	max-width:100%;
+}	
+
+.cls {
+	clear:both;
+}
