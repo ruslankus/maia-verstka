@@ -10,34 +10,131 @@
 	height:40px;
 }
 
-/* Internal ajax menu tabs */
+/* 
+	Internal ajax menu tabs 
+*/
+
+.tab-pane {
+	font-family: 'Open Sans', sans-serif;
+}
+/* photos tab */
+
+.photos-holder {
+	width: 100%;
+	margin: 0 auto 5px auto;
+	padding:0;
+}
 
 .photo-block {
-	/*
-	background-color:#e1e1e1;
-	*/
-	margin:0px;
-	padding:0px 10px 20px 10px;
-	height: 250px;
-	/*
-	border:1px solid red;
-	*/
+	float:left;
+	width: 33,33%;
+	height: 190px;
+	margin:30px 15px 0 15px;
+
 }
 
-.photo-box {
-	/*
-	border:1px solid green;
-	*/
+.show-more {
+	margin:0px 0px 0px 15px;	
 }
 
 
-
-
+.show-more a {
+	text-decoration: none;
+	font-size:15pt;
+	font-weight: 700;
+	color: #aaaaaa;
+}
 .photo-block > img {
-	display: block;
-	max-width:100%;
+	margin: 0 auto 0 auto;
+	max-width:190px;
+	max-height:190px;
 }	
 
-.cls {
-	clear:both;
+/* end photos tab */
+
+/* specialists tab */
+
+
+.spec-holder {
+	width: 100%;
+	margin: 0 auto 20px auto;
+	padding:0;
 }
+
+.spec-blocks-holder {
+	margin-bottom:10px;
+}
+.spec-block {
+	cursor:pointer;
+	line-height:16pt;
+	float:left;
+	width: 33,33%;
+	height: 190px;
+	margin:30px 25px 0 25px;
+	height:280px;
+	text-align:center;
+
+}
+
+.spec-content {
+	border:1px solid #aaaaaa;
+	padding:0;
+	margin:0;
+}
+
+.spec-block > img.round {
+	max-width:170px;
+	max-height:170px;	
+	margin-bottom:20px;
+    border-radius: 100px; /* Радиус скругления */
+    box-shadow: 0 0 0 5px #c2c1c1, 0 0 13px #333; 
+}
+
+.tab-hide {
+	cursor:pointer;
+}
+.spec-title {
+	text-align:center;
+}
+
+.spec-name {
+  font-size: 15pt;
+  font-weight:600;
+  color: #01b1d7;
+}
+
+.spec-block:hover .spec-name,
+.spec-active .spec-name {
+	color: #aaaaaa;
+}
+.spec-specialization {
+	font-size:13pt;
+	font-weight: ;
+	color: #dd2573;
+}
+
+.spec-descriiption {
+	margin:0px 0px 0px 15px;	
+}
+
+.spec-descriiption > h3 {
+	font-size: 15pt;
+  	font-weight:600;
+  	color: #222222;
+}
+
+.spec-descriiption > p {
+  	font-weight:30;
+	font-size: 15pt;
+	line-height: 17pt;
+  	color: #222222;	
+}
+
+.spec-buttons {
+	margin:20px 0px 0px 15px;	
+}
+.spec-buttons .item-menu{
+	position:relative !important;
+}
+/* end tab */
+
