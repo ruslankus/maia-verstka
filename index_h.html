@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css">
+    
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/search_h.css">
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
-    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
-
     <title>Maya page</title>
 </head>
 
@@ -112,22 +114,33 @@
             	<h4>Find your look on a map</h4>
                 <div class="city-input-holder">
                 	<label>City</label>
-                    <input type="text" />
+                    <input type="text" placeholder="City name" />
                 </div><!--/city-input-holder -->
                 <div class="aria-filters">
                 	<label>Area</label>
-                    <p><input type="checkbox"> Old Town</p>
-                    <p><input type="checkbox"> Old Town</p>
-                    <p><input type="checkbox"> Old Town</p>
-					<a href="#">Show more</a>
                     <p>
-                    	Distance from <span>center</span> 
-                    	<select>
-                        	<option>5</option>
-                            <option>10</option>
-                            <option>15</option>
-                        </select>
-                        km
+                        <input id="town1" type="checkbox" name="first" hidden />
+                        <label for="town1">Old_town</label>
+                    </p>
+                    <p>
+                        <input id="town2" type="checkbox" name="first"  hidden />
+                        <label for="town2">Old_town</label>
+                    </p>
+                    <p>
+                        <input id="town3" type="checkbox" name="first"  hidden />
+                        <label for="town3">Old_town</label>
+                    </p>
+					<a href="#">Show more...</a>
+                    <p class="clearfix">
+                    	<span>Distance from</span> <span class="cntr">center</span>
+                        <span class="select-wrapper"> 
+                            <select id="select-distance">
+                                <option>5</option>
+                                <option>10</option>
+                                <option>15</option>
+                            </select>
+                        </span>
+                        <span>km</span>
                     </p>
                 </div>
             </div><!--/find-location -->
@@ -148,11 +161,29 @@
             </div><!--/find-by-rating -->
             
             <div class="find-by-services">
-				<h4>Services</h4>            	
+				<h4>Services</h4>
+                <ul>
+                	<li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <a href="#">Show more</a>            	
             </div><!--/find-by-srvices -->
             
             <div class="find-by-speciality">
             	<h4>Specialty</h4>
+                    <p>
+                        <input id="smen" type="checkbox" name="first" hidden />
+                        <label for="smen">Men</label>
+                    </p>
+                    <p>
+                        <input id="swoman" type="checkbox" name="first" hidden />
+                        <label for="swoman">Woman</label>
+                    </p>
+                    <p>
+                        <input id="schild" type="checkbox" name="first" hidden />
+                        <label for="schild">children</label>
+                    </p>
             </div><!--/find-by-speciality -->
         </aside><!--a-left -->
         
@@ -297,10 +328,10 @@
 </body>
 
 <script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-ui.js"></script>
 
 <script src="js/bootstrap.js"></script>
-
+<script src="js/common.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/header_h.js"></script>
 
