@@ -1,0 +1,253 @@
+*
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /*height: 1024px;*/
+}
+
+.clear
+{
+    clear: both;
+}
+
+.header *
+{
+    box-sizing: content-box;
+}
+
+
+.header .search-container
+{
+    /*background-color: #4ebeff;*/
+    /*height: 40px;*/
+    /*padding: 12px;*/
+}
+
+.header .search-container .s-line
+{
+    width: 100%;
+    height: 100%;
+    /*background-color: white;*/
+    background-color: #49154a;
+    position: relative;
+}
+
+/*
+.header .search-container .s-line.finished
+{
+    background-color: #49154a;
+}
+*/
+
+.header .search-container .s-line .elem.in-search
+{
+    outline: 0;
+}
+
+
+.header .search-container .s-line .elem
+{
+    position: relative;
+    display: block;
+    border: none;
+    height: 38px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    line-height: 40px;
+    color: #aaaaaa;
+    font-size: 15px;
+    text-indent: 41px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #dddddd;
+    border-right: none;
+    background-color: #ffffff;
+}
+
+.header .search-container .s-line .in-search
+{
+    height: 40px;
+}
+
+.header .search-container .s-line .elem.completed
+{
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #72287d;
+    border-left: 1px solid white;
+
+}
+
+.header .search-container .s-line .elem.active
+{
+    height: 40px;
+    width: 40px;
+
+    border: none;
+    border-left: 1px solid white;
+    background-color: #e7307d;
+    color: white;
+}
+
+
+.header .search-container .s-line.untouched .elem.h
+{
+    display: none;
+}
+
+.header .search-container .s-line .elem:first-child
+{
+    border: none;
+}
+
+.header .search-container .s-line .elem.in-search
+{
+    background-image: url("../img/search-ico.png");
+}
+.header .search-container .s-line .elem.in-services
+{
+    background-image: url("../img/services-search-ico.png");
+}
+
+.header .search-container .s-line .elem.in-time
+{
+    background-image: url("../img/time-ico.png");
+}
+
+.header .search-container .s-line .elem.in-date
+{
+    background-image: url("../img/calendar-search-ico.png");
+}
+
+.header .search-container .s-line .elem.in-submit
+{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #1fb6db;
+    border: none;
+    cursor: pointer;
+    background-image: url("../img/search-arrow-ico.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header .search-container .s-line .elem.in-submit:hover
+{
+    background-color: #aaaaaa;
+}
+
+
+/******************************************************************************************************************/
+
+.services-selection-box
+{
+    display: none;
+    position: absolute;
+    /*position: fixed;*/
+    width: 220px;
+    min-height: 40px;
+    border: 1px solid white;
+    border-top: none;
+    top:40px;
+    left:0;
+    background-color: #eeeeee;
+    /*background-color: red;*/
+    z-index: 10;
+}
+
+.services-selection-box li
+{
+    border-top: 1px solid white;
+    display: block;
+    min-height: 20px;
+    padding: 10px;
+    color: #5b5b5b;
+    font-size: 15px;
+    cursor: pointer;
+
+    padding-right: 50px;
+
+    background-image: url("../img/check-box-sprite-bg.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.services-selection-box li.next
+{
+    color: whitesmoke;
+    background-color: #1fb6db;
+    background-image: none;
+}
+
+.services-selection-box li.active
+{
+    background-position: right bottom;
+}
+
+.services-selection-box li:hover
+{
+    /*color: #3d3d3d;*/
+    background-color: #aaaaaa;
+}
+
+/*********************************************************************************************************************/
+
+.time-selection-box
+{
+    display: none;
+    position: absolute;
+    /*position: fixed;*/
+    width: 150px;
+    min-height: 40px;
+    border: 1px solid white;
+    border-top: none;
+    top:40px;
+    left:0;
+    background-color: #eeeeee;
+    /*background-color: red;*/
+    z-index: 10;
+}
+
+.time-selection-box li
+{
+    border-top: 1px solid white;
+    display: block;
+    min-height: 20px;
+    padding: 10px;
+    color: #5b5b5b;
+    font-size: 15px;
+    cursor: pointer;
+
+    padding-right: 50px;
+
+    background-image: url("../img/check-box-sprite-bg.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.time-selection-box li.active
+{
+    background-position: right bottom;
+    background-color: whitesmoke;
+}
+
+.time-selection-box li:hover
+{
+    /*color: #3d3d3d;*/
+    background-color: #aaaaaa;
+}
+
+/*********************************************************************************************************************/
+
+

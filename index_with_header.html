@@ -1,64 +1,80 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style_old.css">
-<title>Maya page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
+
+    <title>Maya page</title>
 </head>
 
 <body>
-<header class="container-fluid">
-	<div class="row">
-    
-        <div class="logo-holder col-xs-4 col-sm-3">
-            <a class="logo" href="/"><img src="images/logo.png" alt="logo" /></a>
-        </div><!--/logo-holder -->
-                    
-        <div class="inputs-holder clearfix col-xs-12 col-sm-4">
-            <div class="search-input-holder">
-                <input type="text" />
-            </div><!--/holder -->
-            
-            <div class="time-input-holder">
-                <input type="text" />
-            </div><!--/time-input-holder -->
-            
-            <div class="service-input-holder">
-                <input type="text" />
+
+<header class="header">
+    <!--Selections START -->
+    <ul class="services-selection-box">
+        <li data-id="1">Service 1</li>
+        <li data-id="2">Service 2</li>
+        <li data-id="3">Service 3</li>
+        <li class="next">Continue</li>
+    </ul>
+
+    <ul class="time-selection-box">
+        <li>9:00</li>
+        <li>9:30</li>
+        <li>9:45</li>
+        <li>11:15</li>
+    </ul>
+
+    <div id="calendar" class="calendar">
+        <div class="switcher">
+            <div id="back"></div>
+            <div id="current"></div>
+            <div id="next"></div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <!--Selections END-->
+
+    <div class="aligner">
+
+        <ul class="icons-right">
+            <li><a href="#"></a></li>
+            <li class="hover-able"><a href="#"></a></li>
+            <li class="hover-able"><a href="#"></a></li>
+            <li class="hover-able"><a href="#"></a></li>
+            <li class="hover-able"><a href="#"></a></li>
+            <li class="hover-able"><a href="#"></a></li>
+        </ul>
+
+        <a href="#" class="logo"></a>
+        <div class="search-container">
+
+            <input type="hidden" id="city_id_input" name="city_id" value="">
+            <input type="hidden" id="services_id_input" name="services_id" value="">
+            <input type="hidden" id="date_input" name="date" value="">
+            <input type="hidden" id="time_input" name="time" value="">
+
+            <div class="s-line untouched">
+                <input type="text" name="search" class="in-search elem">
+                <div class="in-services elem h">Services</div>
+                <div class="in-date elem h">Date</div>
+                <div class="in-time elem h">Time</div>
+                <button class="in-submit elem">go</button>
             </div>
-        </div><!--/inputs-holder -->
-        
-        <div class="icons-holder clearfix col-xs-8 col-sm-5">
-            <div>
-                <a class="hd-lng" href="#"></a>                
-            </div>
-            <div class="hidden-xs">
-                <a class="hd-cart" href="#"><span class="badge">34</span></a>                
-            </div>
-            <div>
-                <a class="hd-help" href="#"></a>                
-            </div>
-            
-            <div>
-                <a class="hd-tast" href="#"><span class="badge">12</span></a>
-            </div>
-            <div class="hidden-xs">
-                <a class="hd-fav" href="#"></a>                
-            </div>
-            <div class="hidden-xs">
-                <a class="hd-sheld" href="#"></a>                
-            </div>
-            
-            <div>
-                <a class="hd-login" href="#"></a>
-            </div>
-        </div><!--/holder - holder --->
-            
-    </div><!--/row -->
+        </div>
+        <div class="clear"></div>
+    </div>
 </header>
+
 
 <div class="container-fluid" id="main-wrapper">
 	<div class="row main-content-wrapper">
@@ -72,32 +88,8 @@
         </div><!--/botton-holder -->	
     
     	<aside class="col-md-3 col-sm-3 hidden-xs a-left">
-        	<div class="find-location">
-            	find location
-            </div><!--/find-location -->
-            
-            <div class="find-by-name">
-				find name            
-            </div><!-- /find-by-name -->
-            
-            <div class="find-by-price">
-            	find by price
-            </div><!--/find-by-price -->
-            
-            <div class="find-by-rating">
-            	find by rating
-            </div><!--/find-by-rating -->
-            
-            <div class="find-by-services">
-            	find by services
-            </div><!--/find-by-srvices -->
-            
-            <div class="find-by-speciality">
-            	find by speciality
-            </div><!--/find-by-speciality -->
-        </aside><!--a-left -->
-        
-        
+        left
+        </aside>
         <section class="col-xs-12 col-md-7 col-sm-9">
         
         	<div class="item-wrapper">
@@ -235,7 +227,14 @@
     </div>
 </footer>
 </body>
+
+
 <script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+
 <script src="js/bootstrap.js"></script>
-<script src="js/head-inputs.js"></script>
+
+<script src="js/calendar.js"></script>
+<script src="js/header.js"></script>
+
 </html>

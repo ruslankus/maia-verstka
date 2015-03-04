@@ -7,11 +7,6 @@
     padding: 0;
 }
 
-body
-{
-    background-color: lightgrey;
-}
-
 .calendar
 {
     width: 300px;
@@ -20,8 +15,11 @@ body
     border: 1px solid white;
     background-color: white;
     position: absolute;
+    /*position: fixed;*/
     /*left: 10px;*/
     /*top: 10px;*/
+    z-index: 10;
+    display: none;
 }
 
 .calendar .switcher

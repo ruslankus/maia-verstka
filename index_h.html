@@ -1,37 +1,73 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style_old.css">
-<title>Maya page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/search_h.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
+
+    <title>Maya page</title>
 </head>
 
 <body>
-<header class="container-fluid">
-	<div class="row">
+<header class="container-fluid header">
+
+
+	<div class="row clearfix">
     
-        <div class="logo-holder col-xs-4 col-sm-3">
+        <div class="logo-holder col-xs-4 col-sm-3 col-md-2">
             <a class="logo" href="/"><img src="images/logo.png" alt="logo" /></a>
         </div><!--/logo-holder -->
-                    
-        <div class="inputs-holder clearfix col-xs-12 col-sm-4">
-            <div class="search-input-holder">
-                <input type="text" />
-            </div><!--/holder -->
-            
-            <div class="time-input-holder">
-                <input type="text" />
-            </div><!--/time-input-holder -->
-            
-            <div class="service-input-holder">
-                <input type="text" />
+
+
+        <input type="hidden" id="city_id_input" name="city_id" value="">
+        <input type="hidden" id="services_id_input" name="services_id" value="">
+        <input type="hidden" id="date_input" name="date" value="">
+        <input type="hidden" id="time_input" name="time" value="">
+
+        <div class="inputs-holder clearfix col-xs-12 col-sm-4 col-md-6 search-container">
+            <div class="s-line untouched clearfix">
+                <input type="text" name="search" class="in-search elem">
+                <div class="in-services elem h">Services</div>
+                <div class="in-date elem h">Date</div>
+                <div class="in-time elem h">Time</div>
+                <button class="in-submit elem">go</button>
+
+                <!--Selections START -->
+                <ul class="services-selection-box">
+                    <li data-id="1">Service 1</li>
+                    <li data-id="2">Service 2</li>
+                    <li data-id="3">Service 3</li>
+                    <li class="next">Continue</li>
+                </ul>
+
+                <ul class="time-selection-box">
+                    <li>9:00</li>
+                    <li>9:30</li>
+                    <li>9:45</li>
+                    <li>11:15</li>
+                </ul>
+
+                <div id="calendar" class="calendar">
+                    <div class="switcher">
+                        <div id="back"></div>
+                        <div id="current"></div>
+                        <div id="next"></div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <!--Selections END-->
+
             </div>
         </div><!--/inputs-holder -->
         
-        <div class="icons-holder clearfix col-xs-8 col-sm-5">
+        <div class="icons-holder clearfix col-xs-8 col-sm-5 col-md-4">
             <div>
                 <a class="hd-lng" href="#"></a>                
             </div>
@@ -60,7 +96,7 @@
     </div><!--/row -->
 </header>
 
-<div class="container-fluid" id="main-wrapper">
+<div class="container-fluid clearfix" id="main-wrapper">
 	<div class="row main-content-wrapper">
         <div class="botton-holder clearfix col-xs-12">
             <div class="pull-left top-btns-holder">
@@ -71,34 +107,58 @@
             </div>
         </div><!--/botton-holder -->	
     
-    	<aside class="col-md-3 col-sm-3 hidden-xs a-left">
+    	<aside class="col-md-3 col-sm-4 hidden-xs a-left">
         	<div class="find-location">
-            	find location
+            	<h4>Find your look on a map</h4>
+                <div class="city-input-holder">
+                	<label>City</label>
+                    <input type="text" />
+                </div><!--/city-input-holder -->
+                <div class="aria-filters">
+                	<label>Area</label>
+                    <p><input type="checkbox"> Old Town</p>
+                    <p><input type="checkbox"> Old Town</p>
+                    <p><input type="checkbox"> Old Town</p>
+					<a href="#">Show more</a>
+                    <p>
+                    	Distance from <span>center</span> 
+                    	<select>
+                        	<option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                        </select>
+                        km
+                    </p>
+                </div>
             </div><!--/find-location -->
             
             <div class="find-by-name">
-				find name            
+            	<h4>Enter name </h4>
+                <p>
+                <input type="text" placeholder="SPA, service or person" />
+                </p>
             </div><!-- /find-by-name -->
             
             <div class="find-by-price">
-            	find by price
+            	<h4>Price</h4>
             </div><!--/find-by-price -->
             
             <div class="find-by-rating">
-            	find by rating
+            	 <h4>Rating</h4>
             </div><!--/find-by-rating -->
             
             <div class="find-by-services">
-            	find by services
+				<h4>Services</h4>            	
             </div><!--/find-by-srvices -->
             
             <div class="find-by-speciality">
-            	find by speciality
+            	<h4>Specialty</h4>
             </div><!--/find-by-speciality -->
         </aside><!--a-left -->
         
         
-        <section class="col-xs-12 col-md-7 col-sm-9">
+        
+        <section class="col-xs-12 col-md-7 col-sm-8">
         
         	<div class="item-wrapper">
                    <div class="item-top" style="background-image:url(images/salon_bg.jpg)" >
@@ -235,7 +295,13 @@
     </div>
 </footer>
 </body>
+
 <script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+
 <script src="js/bootstrap.js"></script>
-<script src="js/head-inputs.js"></script>
+
+<script src="js/calendar.js"></script>
+<script src="js/header_h.js"></script>
+
 </html>
