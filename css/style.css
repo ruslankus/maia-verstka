@@ -593,6 +593,21 @@ aside.a-left > div.find-by-name > h4 {
 	
 .find-by-name > p {
 	margin-bottom:30px;}
+
+/* -- find by price -- */	
+.find-by-price > h4 {
+	background:url(../images/find-price-head-bg.png) left center no-repeat;
+	line-height:27px;}	
+	
+/* -- find by rating -- */	
+.find-by-rating > h4 {
+	background:url(../images/find-rating-head-bg.png) left center no-repeat;
+	line-height:27px;}
+	
+/*-- find by service -- */
+.find-by-services > h4 {
+	background:url(../images/find-services-head-bg.png) left center no-repeat;
+	line-height:27px;}		
 	
 /*--- speciality --*/
 .find-by-speciality > h4 {
