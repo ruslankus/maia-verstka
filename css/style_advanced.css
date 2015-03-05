@@ -1,3 +1,6 @@
+body {
+	font-size: 16px;
+}
 .map-box {
 	width: 100%;
 	height: 275px;
@@ -20,16 +23,17 @@
 /* photos tab */
 
 .photos-holder {
-	width: 100%;
+	max-width: 100%;
 	margin: 0 auto 5px auto;
 	padding:0;
 }
 
 .photo-block {
 	float:left;
-	width: 33,33%;
+	width: 33.33%;
 	height: 190px;
-	margin:30px 15px 0 15px;
+	margin:30px 0px 0 0px;
+	text-align:center;
 
 }
 
@@ -40,16 +44,29 @@
 
 .show-more a {
 	text-decoration: none;
-	font-size:15pt;
+	font-size:0.938em;
 	font-weight: 700;
 	color: #aaaaaa;
 }
 .photo-block > img {
+	position:relative;
 	margin: 0 auto 0 auto;
 	max-width:190px;
 	max-height:190px;
 }	
 
+
+@media screen and (max-width: 620px) {
+	.photo-block {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.photo-block {
+		width: 100%;
+	}
+}
 /* end photos tab */
 
 /* specialists tab */
@@ -61,25 +78,22 @@
 	padding:0;
 }
 
-.spec-blocks-holder {
-	margin-bottom:10px;
-}
 .spec-block {
 	cursor:pointer;
-	line-height:16pt;
 	float:left;
-	width: 33,33%;
+	width: 33.33%;
 	height: 190px;
-	margin:30px 25px 0 25px;
+	margin:30px 0px 10px 0px;
 	height:280px;
 	text-align:center;
 
 }
 
 .spec-content {
-	border:1px solid #aaaaaa;
+	border:1px solid #ddd;
 	padding:0;
 	margin:0;
+	clear:both;
 }
 
 .spec-block > img.round {
@@ -98,7 +112,7 @@
 }
 
 .spec-name {
-  font-size: 15pt;
+  font-size: 0.938em;
   font-weight:600;
   color: #01b1d7;
 }
@@ -108,7 +122,7 @@
 	color: #aaaaaa;
 }
 .spec-specialization {
-	font-size:13pt;
+	font-size:0.813em;
 	font-weight: ;
 	color: #dd2573;
 }
@@ -118,23 +132,240 @@
 }
 
 .spec-descriiption > h3 {
-	font-size: 15pt;
+	font-size: 0.938em;
   	font-weight:600;
   	color: #222222;
 }
 
 .spec-descriiption > p {
   	font-weight:30;
-	font-size: 15pt;
-	line-height: 17pt;
+	font-size: 0.938em !important;
+	line-height: 1.3em;
   	color: #222222;	
 }
 
 .spec-buttons {
 	margin:20px 0px 0px 15px;	
 }
-.spec-buttons .item-menu{
+.spec-buttons > .item-menu{
 	position:relative !important;
+	display:block !important;
 }
-/* end tab */
 
+.spec-buttons > .item-menu >li{
+	float:right;
+} 
+
+.spec-buttons > .item-menu > li.tab-hide {
+	margin-right:-2px;
+
+}
+.spec-buttons > .item-menu > li.tab-hide a {
+	margin-left:9px;
+	background:url('../images/tab-hide.png') center center no-repeat transparent;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+@media screen and (max-width: 620px) {
+	.spec-block {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.spec-block {
+		width: 100%;
+	}
+}
+/* end tab specialists */
+
+/* services tab */
+
+.serv-holder {
+	width: 100%;
+	margin: 0 auto 20px auto;
+	padding:0;
+}
+
+.serv-block {
+	cursor:pointer;
+
+	float:left;
+	width: 33.33%;
+	height: 190px;
+	margin:30px 0px 20px 0px;
+	height:270px;
+	text-align:center;
+
+}
+
+.serv-content {
+	border:1px solid #ddd;
+	padding:0;
+	margin:0;
+	clear:both;
+}
+
+.serv-block > img {
+	max-width:190px;
+	max-height:190px;	
+	margin-bottom:0px;
+}
+
+.tab-hide {
+	cursor:pointer;
+}
+.serv-title {
+	position:relative;
+	width:190px;
+	height:55px;
+	margin:0 auto 5px auto;
+	text-align:center;
+	background-color: #72287d;
+	padding-left:10px;
+}
+
+.serv-name {
+
+  padding:0;
+  text-align:left;
+  font-size: 1.867em;
+  line-height:55px;
+  color: #ffffff;
+}
+
+.serv-count {
+  position:relative;
+  float:right;
+  background-color: #1fb6db;
+  padding:0 10px 0 10px;
+  text-align:center;
+  height:100%;
+  width:auto;
+  font-size: 1.867em;
+  line-height:55px;
+  color: #ffffff;
+}
+
+.serv-block:hover .serv-title,
+.serv-active .serv-title {
+	background-color: #1fb6db;
+}
+.serv-specialization {
+	font-size:0.813em;
+	font-weight: ;
+	color: #dd2573;
+}
+
+.serv-descriiption {
+	margin:0px 0px 0px 15px;	
+}
+
+.serv-descriiption > h3 {
+	font-size: 0.938em;
+  	font-weight:600;
+  	color: #222222;
+}
+
+.serv-descriiption > p {
+  	font-weight:30;
+	font-size: 0.938em !important;
+	line-height: 1.3em;
+  	color: #222222;	
+}
+
+.serv-buttons {
+	margin:20px 0px 0px 15px;	
+}
+.serv-buttons > .item-menu{
+	position:relative !important;
+	display:block !important;
+}
+
+.serv-buttons > .item-menu >li{
+	float:right;
+} 
+
+.serv-buttons > .item-menu > li.tab-hide {
+	margin-right:-2px;
+
+}
+.serv-buttons > .item-menu > li.tab-hide a {
+	margin-left:9px;
+	background:url('../images/tab-hide.png') center center no-repeat transparent;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.serv-buttons > .item-menu > li.book a {
+    background-color: #e7307d !important;
+    width: 100px !important;	
+}
+
+.serv-buttons > .item-menu > li.book-price {
+	text-align:center;
+	color: #ffffff;
+	background: #72287d;
+	padding: 0 10px 0 10px;
+	height:45px;
+	overflow: hidden;
+}
+
+.serv-buttons > .item-menu > li.book-price .price-from {
+	display:block;
+	margin-top:4px;
+	font-size: 0.750em;
+}
+
+.serv-buttons > .item-menu > li.book-price .price {
+	display:block;
+	font-size: 1.188em;
+	margin-top:-4px;
+}
+
+
+.serv-buttons > .item-menu > li.tab-hide-empty {
+	font-size:1.188em;
+
+}
+.serv-buttons > .item-menu > li.tab-hide-empty a {
+	margin-left: 9px;
+	background: none !important;
+	border: none !important;
+}
+
+.serv-devider {
+	position:relative;
+	margin:0 auto 0 auto;
+	width:95%;
+	border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 620px) {
+	.serv-block {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.serv-block {
+		width: 100%;
+	}
+}
+
+/* end services tab */
+
+/* reviews tab */
+
+
+
+
+
+
+
+
+
+/* end reviews tab */
