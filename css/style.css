@@ -433,9 +433,9 @@ aside.a-left > div {
 	border-bottom:1px solid #ddd;}
 	
 aside.a-left > div > h4 {
+	font-size:19px;
 	font-weight:400;
 	color:#222;
-	font-size:1.188em;
 	line-height:25px;
 	padding-left:40px;
 	margin-bottom:20px;}
@@ -492,6 +492,7 @@ aside.a-left > div > h4 {
 	
 	
 .aria-filters > p:last-child {
+	font-size:15px;
 	font-weight:600;}
 	
 .aria-filters > p:last-child > .cntr {
@@ -500,7 +501,7 @@ aside.a-left > div > h4 {
 	font-weight:inherit;}
 	
 .aria-filters > p:last-child > span {
-	font-size:inherit;
+	font-size:15px;
 	font-weight:inherit;
 	display:block;
 	float:left;
@@ -594,7 +595,10 @@ aside.a-left > div.find-by-name > h4 {
 .find-by-name > p {
 	margin-bottom:30px;}
 
-/* -- find by price -- */	
+/* -- find by price -- */
+.find-by-price {
+	padding-bottom:30px;}
+		
 .find-by-price > h4 {
 	background:url(../images/find-price-head-bg.png) left center no-repeat;
 	line-height:27px;}	
@@ -604,10 +608,72 @@ aside.a-left > div.find-by-name > h4 {
 	background:url(../images/find-rating-head-bg.png) left center no-repeat;
 	line-height:27px;}
 	
+.rating-holder > div {
+	float:left;}
+	
+.stars-holder {
+	margin-bottom:30px;
+	background:url(../images/sprite2_filters.png) center top no-repeat;}
+	
+	
+.stars-holder > a {
+	float:left;
+	background-color:transparent;
+	width:32px;
+	height:29px;
+	margin-left:2px;}
+	
+.stars-holder > a:focus {
+	outline:none;}
+	
+.number-holder {
+	margin-left:15px;
+	font-size:19px;
+	font-weight:600;
+	color:#01b1d7;}
+		
 /*-- find by service -- */
 .find-by-services > h4 {
 	background:url(../images/find-services-head-bg.png) left center no-repeat;
-	line-height:27px;}		
+	line-height:27px;}
+	
+.find-by-services > a {
+	display:block;
+	padding-left:45px;
+	font-weight:700;
+	font-size:15px;
+	text-transform:lowercase;
+	color:#aaa;
+	margin-bottom:30px;}
+	
+	
+	
+ul.srv-type {
+	list-style:none;}
+	
+ul.srv-type > li > a {
+	line-height:40px;
+	display:block;
+	padding-left:45px;
+	font-size:15px;
+	font-weight:600;
+	color:#222;
+	height:40px;}
+	
+a.srv-skin {
+	background:url(../images/skin-serv-bg.png) left top no-repeat;}	
+	
+a.srv-hair {
+	background:url(../images/hair-serv-bg.png) left top no-repeat;}
+	
+a.srv-nail {
+	background:url(../images/nail-serv-bg.png) left top no-repeat;}		
+	
+ul.srv-type > li > a:hover {
+	color:white;
+	text-decoration:none;
+	background-color:#c4c4c4;
+	background-position:left bottom;}
 	
 /*--- speciality --*/
 .find-by-speciality > h4 {
