@@ -758,12 +758,54 @@ ul.srv-type > li > a:hover {
     background-position: center bottom;}
 
 .find-by-speciality > p > input[type="checkbox"]:checked + label::before {
-    background-position: center top; }	
+    background-position: center top; }
+	
+	
+/*--------- aside right part ------- */		
 	
 aside.a-right {
-	display:none;
-	background-color:#5C4915;}
+	padding-left:10px;
+	display:none;}
 	
+aside.a-right > div > h4 {
+	line-height:30px;
+	padding-left:40px;}
+	
+.history {
+	width:165px;}
+	
+.history > h4 {
+	background:url(../images/history_head_bg.png) left center no-repeat;}
+	
+.favorites > h4 {
+	background:url(../images/favorites_head_bg.png) left center no-repeat;}
+		
+.history > article,
+.favorites > article {
+	margin-bottom:10px;}
+	
+.history > article > div,
+.favorites > article > div {
+	float:left;}
+	
+.img-holder {
+	width:45px;}
+	
+.art-descr {
+	font-size:13px;
+	padding-left:5px;
+	width:120px;}
+	
+.art-descr > a {
+	display:block;
+	font-size:13px;
+	line-height:14px;
+	color:#de2573;
+	margin:0;}
+	
+.art-descr > p:last-child {
+	line-height:15px;
+	color:#01b1d7;}
 	
 	
 /*---------- footer ---------*/
