@@ -1,0 +1,27 @@
+.side-container-a
+{
+    display: block;
+    min-height: 480px;
+    width: 300px;
+    position: absolute;
+    top: 128px;
+    left: -300px;
+    background-color: #ffffff;
+    z-index: 10;
+    border: 1px solid #aeaeae;
+    padding: 15px;
+}
+
+.side-container-b
+{
+    display: block;
+    min-height: 480px;
+    width: 300px;
+    position: absolute;
+    top: 128px;
+    right: -300px;
+    background-color: #ffffff;
+    z-index: 10;
+    border: 1px solid #aeaeae;
+    padding: 15px;
+}
