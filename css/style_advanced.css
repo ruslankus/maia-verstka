@@ -38,7 +38,7 @@ body {
 }
 
 .show-more {
-	margin:0px 0px 0px 15px;	
+	padding-left:15px;
 }
 
 
@@ -100,7 +100,7 @@ body {
 	max-width:170px;
 	max-height:170px;	
 	margin-bottom:20px;
-    border-radius: 100px; /* Радиус скругления */
+    border-radius: 100px; 
     box-shadow: 0 0 0 5px #c2c1c1, 0 0 13px #333; 
 }
 
@@ -360,12 +360,106 @@ body {
 
 /* reviews tab */
 
+.review-block {
+	width: 100%;
+	margin:25px 0 25px 0;
+}
+
+.rev-author {
+	position:relative;
+	width:25%;
+	float:left;
+	text-align:center;
+}
+
+.rev-content {
+	position:relative;
+	width:75%;
+	float: left;
+}
+
+.rev-content > p {
+	text-align: left;
+	font-size: 0.938em !important;
+	line-height: 1.3em;
+}
+
+.rev-author > img {
+	max-width: 100px;
+	max-height: 100px;
+    border-radius: 100px;
+    /*box-shadow: 0 0 0 5px #c2c1c1, 0 0 13px #333;*/ 
+    margin-bottom:10px;
+}
 
 
+.initials {
+	color: #01b1d7;
+	font-size: 0.813em;
+	line-height: 1.1em;
+}
+
+.initials-hidden {
+	display:none;
+}
+
+.show-more-but {
+		display:inline-block;
+		float: left;
+		
+}
+
+.show-more-but a {
+	text-decoration: none;
+	font-size:0.938em;
+	font-weight: 700;
+	color: #aaaaaa;
+}
+
+.rating {
+	posiiton:relative;
+	height:20px;
+	background: url('../images/sprite3_rewies.png') no-repeat;
+}
+
+.r0 {
+	background-position: -5px 0px; 
+}
+
+.r1 {
+	background-position: -5px -19px; 
+}
+
+.r2 {
+	background-position: -5px -36px; 
+}
+
+.r3 {
+	background-position: -5px -55px; 
+}
 
 
+.r4 {
+	background-position: -5px -73px; 
+}
 
+.r5 {
+	background-position: -5px -91px; 
+}
 
+@media (max-width: 471px) {
+	.rev-author {
+		display: none;
+	}
 
+	.initials-hidden {
+		display:block;
+	}
+	.show-more-but {
+			float: none;
+			width:100%;
+			margin-bottom:15px;
+	}
 
+}
 /* end reviews tab */
