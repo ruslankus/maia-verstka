@@ -5,7 +5,7 @@ events
 $(document).ready(function(e) {
 
     $(document).on('click','.spec-block', function(){
-        //$('#spec-content').slideUp();
+        // $('#spec-content').slideUp();
         $('#spec-content').remove();
         $('.spec-block').removeClass('spec-active');
         $(this).addClass('spec-active');
