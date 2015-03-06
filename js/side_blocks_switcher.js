@@ -1,23 +1,17 @@
 jQuery(document).ready(function(){
 
     jQuery(".pull-left").find('a').click(function(){
-
-        jQuery(".s-cont").remove();
-        var html = jQuery('.a-left').html();
-        jQuery(document.body).append('<aside class="a-left side-container-a s-cont">'+html+'</aside>');
-        jQuery(".side-container-a").animate({'left':0});
+        jQuery('.s-cont').removeClass('side-container-b').removeAttr('style');
+        jQuery('.a-left').addClass('side-container-a s-cont').animate({'left':0});
     });
 
     jQuery(".pull-right").find('a').click(function(){
-
-        jQuery(".s-cont").remove();
-        var html = jQuery('.a-right').html();
-        jQuery(document.body).append('<aside class="a-right side-container-b s-cont">'+html+'</aside>');
-        jQuery(".side-container-b").animate({'right':0});
+        jQuery('.s-cont').removeClass('side-container-a').removeAttr('style');
+        jQuery('.a-right').addClass('side-container-b s-cont').animate({'right':0});
     });
 
     jQuery(window).resize(function(){
-        jQuery(".s-cont").remove();
+        jQuery(".s-cont").removeClass('side-container-a').removeClass('side-container-b').removeClass('s-cont').removeAttr('style');
     });
 
     /*

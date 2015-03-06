@@ -1,10 +1,11 @@
 .side-container-a
 {
-    display: block;
-    min-height: 480px;
-    width: 300px;
-    position: absolute;
+    display: block !important;
+    min-height: 480px !important;
+    width: 300px !important;
+    position: absolute !important;
     top: 128px;
+    /*left: 0;*/
     left: -300px;
     background-color: #ffffff;
     z-index: 10;
@@ -14,11 +15,12 @@
 
 .side-container-b
 {
-    display: block;
-    min-height: 480px;
-    width: 300px;
-    position: absolute;
+    display: block !important;
+    min-height: 480px !important;
+    width: 300px !important;
+    position: absolute !important;
     top: 128px;
+    /*left: 0;*/
     right: -300px;
     background-color: #ffffff;
     z-index: 10;
