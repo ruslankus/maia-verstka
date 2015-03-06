@@ -2,28 +2,35 @@
 {
     display: block !important;
     min-height: 480px !important;
-    width: 300px !important;
+    /*width: 300px !important;*/
     position: absolute !important;
-    top: 128px;
+    top: 198px;
     /*left: 0;*/
     left: -300px;
     background-color: #ffffff;
     z-index: 10;
-    border: 1px solid #aeaeae;
+    border: 1px solid #fd3e81;
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 .side-container-b
 {
     display: block !important;
     min-height: 480px !important;
-    width: 300px !important;
+    /*width: 300px !important;*/
     position: absolute !important;
-    top: 128px;
+    top: 198px;
     /*left: 0;*/
     right: -300px;
     background-color: #ffffff;
     z-index: 10;
-    border: 1px solid #aeaeae;
+    border: 1px solid #fd3e81;
     padding: 15px;
+    margin-bottom: 15px;
+}
+
+.active-button
+{
+    background-color: #e7307d !important;
 }
