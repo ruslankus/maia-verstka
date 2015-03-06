@@ -426,6 +426,7 @@ aside {
 	min-height:300px;}
 	
 aside.a-left {
+	display:none;
 	color:#222;}
 
 aside.a-left > div {
@@ -760,6 +761,7 @@ ul.srv-type > li > a:hover {
     background-position: center top; }	
 	
 aside.a-right {
+	display:none;
 	background-color:#5C4915;}
 	
 	
@@ -814,6 +816,7 @@ footer > div > div:last-child {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
+	aside.a-left {display:block;}
 	header {height:88px;}
 	#main-wrapper { padding-top:88px;}
 	.icons-holder { margin-top:20px;}
@@ -831,5 +834,5 @@ footer > div > div:last-child {
 
 
 @media (min-width:992px){
-	
+	aside.a-right {display:block;}
 } /*-- 992px -- */
