@@ -26,12 +26,12 @@ jQuery(document).ready(function(){
             jQuery(this).addClass('active-button');
             jQuery(".pull-left").find('a').removeClass('active-button');
             jQuery('.s-cont').removeClass('side-container-a').removeAttr('style');
-            jQuery('.a-right').css({'right':-w+'px','width':w+'px'}).addClass('side-container-b s-cont').animate({'right':15+'px'});
+            jQuery('.a-right').css({'left':-w+'px','width':w+'px'}).addClass('side-container-b s-cont').animate({'left':15+'px'});
         }
         else
         {
             jQuery(this).removeClass('active-button');
-            jQuery('.a-right').animate({'right':-w+'px'});
+            jQuery('.a-right').animate({'left':-w+'px'});
         }
     });
 
