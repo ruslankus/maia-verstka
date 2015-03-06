@@ -14,7 +14,7 @@ $(document).ready(function(e) {
 			$('.sl-to').html(ui.values[1]);	
 		},//slde:function 
 		
-	});//slider-range
+	}).slider("pips", { labels: {first:'10 €', last:'200 € + '}}).slider("float", {suffix:' €' });//slider-range
 	
 	//stars selector
 	$(".stars-holder ").hover(function(){},

@@ -1,0 +1,53 @@
+.side-container-a
+{
+    display: block !important;
+    min-height: 480px !important;
+    /*width: 300px !important;*/
+    position: absolute !important;
+    top: 198px;
+    /*left: 0;*/
+    left: -300px;
+    background-color: #ffffff;
+    z-index: 10;
+    border: 1px solid #fd3e81;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.side-container-b
+{
+    display: block !important;
+    min-height: 480px !important;
+    /*width: 300px !important;*/
+    position: absolute !important;
+    top: 198px;
+    /*left: 0;*/
+    /*right: -300px;*/
+    left: -300px;
+    background-color: #ffffff;
+    z-index: 10;
+    border: 1px solid #fd3e81;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.active-button
+{
+    background-color: #e7307d !important;
+}
+
+.cross-close
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../images/cross-close.png");
+    background-color: #e7307d;
+}

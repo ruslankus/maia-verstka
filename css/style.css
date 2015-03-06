@@ -426,6 +426,7 @@ aside {
 	min-height:300px;}
 	
 aside.a-left {
+	display:none;
 	color:#222;}
 
 aside.a-left > div {
@@ -599,9 +600,59 @@ aside.a-left > div.find-by-name > h4 {
 .find-by-price {
 	padding-bottom:30px;}
 		
-.find-by-price > h4 {
+aside.a-left  .find-by-price > h4 {
 	background:url(../images/find-price-head-bg.png) left center no-repeat;
-	line-height:27px;}	
+	line-height:27px;
+	margin-bottom:40px;}
+	
+/*-- slider ---*/	
+#slider-range {
+	height:4px;
+	background-color:#e1e1e1;}
+	
+#slider-range .ui-slider-range	{
+	background-color:#80d8eb;}
+	
+#slider-range .ui-slider-handle {
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background-color:#777;}
+	
+	
+#slider-range .ui-slider-label {
+	font-weight:600;
+	top:20px;
+	height:15px;
+	color:#222;
+	width:3em;}	
+	
+.ui-slider-pips { }
+	
+#slider-range .ui-slider-pip {
+	height:11px;
+	top:3px;}
+		
+#slider-range .ui-slider-pip .ui-slider-line {
+	height:11px;}
+	
+#slider-range .ui-slider-pip-selected-initial-second  .ui-slider-label {
+	left:-36px;
+	margin:0;
+	width:5em; }
+	
+#slider-range .ui-slider-tip {
+	color:#01b1d7;
+	font-weight:600;
+	font-size:15px;
+	width:3em;
+	display:block;
+	border:none;}
+	
+#slider-range .ui-slider-tip:before {
+	border:none;}		
+				
+			
 	
 /* -- find by rating -- */	
 .find-by-rating > h4 {
@@ -710,6 +761,7 @@ ul.srv-type > li > a:hover {
     background-position: center top; }	
 	
 aside.a-right {
+	display:none;
 	background-color:#5C4915;}
 	
 	
@@ -764,6 +816,7 @@ footer > div > div:last-child {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
+	aside.a-left {display:block;}
 	header {height:88px;}
 	#main-wrapper { padding-top:88px;}
 	.icons-holder { margin-top:20px;}
@@ -781,5 +834,5 @@ footer > div > div:last-child {
 
 
 @media (min-width:992px){
-	
+	aside.a-right {display:block;}
 } /*-- 992px -- */
