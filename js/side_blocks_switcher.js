@@ -56,6 +56,7 @@ jQuery(document).ready(function(){
 
         jQuery(".pull-left").find('a').removeClass('active-button');
         jQuery(".pull-right").find('a').removeClass('active-button');
+        jQuery(".cross-close").remove();
     }
 
 
