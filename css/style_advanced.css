@@ -1,3 +1,14 @@
+/*
+	main for all tabs
+*/
+
+.item-more{
+	display:none;
+}
+
+/*
+	map tab
+*/
 .map-box {
 	width: 100%;
 	height: 275px;
@@ -204,6 +215,9 @@
 
 }
 
+.serv-block > .tab-serv-show {
+	display:none;
+}
 .serv-content {
 	border:1px solid #ddd;
 	padding:0;
@@ -256,6 +270,11 @@
 .serv-active .serv-title {
 	background-color: #1fb6db;
 }
+
+.serv-active > .tab-serv-show {
+	display:inline-block;
+}
+
 .serv-specialization {
 	font-size:0.813em;
 	font-weight: ;
