@@ -35,7 +35,16 @@ $(document).ready(function(e) {
             }
             else
             {
-              next_div = $(this).nextAll('.spec-block[data-order="'+lastInRow+'"]');
+                if($(this).nextAll('.spec-block[data-order="'+lastInRow+'"]').length)
+                {
+                    next_div = $(this).nextAll('.spec-block[data-order="'+lastInRow+'"]');
+                }
+                else
+                {
+                    // if row not full
+                    var prev = lastInRow-1;
+                    next_div = $(this).nextAll('.spec-block[data-order="'+prev+'"]');
+                }
             }
             
         }
