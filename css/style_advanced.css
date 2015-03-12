@@ -152,8 +152,8 @@
 }
 
 .spec-descriiption > p {
-  	font-weight:30;
-	font-size: 0.938em !important;
+  	font-weight:300;
+	font-size: 0.938em;
 	line-height: 1.3em;
   	color: #222222;	
 }
@@ -162,8 +162,7 @@
 	margin:20px 0px 0px 15px;	
 }
 .spec-buttons > .item-menu{
-	position:relative !important;
-	display:block !important;
+	position:relative;
 }
 
 .spec-buttons > .item-menu >li{
@@ -292,9 +291,9 @@
 }
 
 .serv-descriiption > p {
-  	font-weight:30;
-	font-size: 0.938em !important;
-	line-height: 1.3em;
+  	font-weight:300;
+	font-size:15px;
+	line-height:18px;
   	color: #222222;	
 }
 
@@ -302,8 +301,7 @@
 	margin:20px 0px 0px 15px;	
 }
 .serv-buttons > .item-menu{
-	position:relative !important;
-	display:block !important;
+	position:relative;
 }
 
 .serv-buttons > .item-menu >li{
@@ -323,8 +321,8 @@
 }
 
 .serv-buttons > .item-menu > li.book a {
-    background-color: #e7307d !important;
-    width: 100px !important;	
+    background-color: #e7307d;
+    width: 100px;	
 }
 
 .serv-buttons > .item-menu > li.book-price {
@@ -334,6 +332,7 @@
 	padding: 0 10px 0 10px;
 	height:45px;
 	overflow: hidden;
+	margin-right:1px;
 }
 
 .serv-buttons > .item-menu > li.book-price .price-from {
